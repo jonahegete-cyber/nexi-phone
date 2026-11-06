@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXI PHONE</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#080b18">
+<title>NEXI PHONE</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="phone">
-    <div class="dynamic-island"></div>
+  <div class="wallpaper"></div>
+  <div class="island" id="island"></div>
 
-    <div class="statusbar">
-        <span>18:26</span>
-        <span>●●●  WiFi 🔋</span>
+  <div class="status">
+    <span id="statusTime">12:00</span>
+    <span>●●● ◉ ▰</span>
+  </div>
+
+  <header class="top">
+    <div id="lockDate"></div>
+    <div id="lockClock"></div>
+    <div id="greeting">NEXI PHONE</div>
+  </header>
+
+  <main id="screen">
+    <div class="widget">
+      <div>
+        <small>WILLKOMMEN BEI</small>
+        <h2>NEXI PHONE</h2>
+        <p>Dein Smartphone. Dein System.</p>
+      </div>
+      <div class="widget-symbol">✦</div>
     </div>
 
-    <main id="screen">
-        <div class="clock" id="clock">18:26</div>
-        <div class="date" id="date">Freitag, 6. November</div>
+    <section class="app-grid" id="apps"></section>
 
-        <div class="apps">
-            <div class="app" onclick="openApp('Telefon')">
-                <span>📞</span>Telefon
-            </div>
-            <div class="app" onclick="openApp('Nachrichten')">
-                <span>💬</span>Nachrichten
-            </div>
-            <div class="app" onclick="openApp('Fotos')">
-                <span>🌄</span>Fotos
-            </div>
-            <div class="app" onclick="openApp('Kamera')">
-                <span>📷</span>Kamera
-            </div>
-            <div class="app" onclick="openApp('Einstellungen')">
-                <span>⚙️</span>Einstellungen
-            </div>
-            <div class="app" onclick="openApp('Musik')">
-                <span>🎵</span>Musik
-            </div>
-        </div>
+    <div class="dock" id="dock"></div>
+  </main>
 
-        <div class="dock">
-            <span onclick="openApp('Telefon')">📞</span>
-            <span onclick="openApp('Nachrichten')">💬</span>
-            <span onclick="openApp('Safari')">🌐</span>
-            <span onclick="openApp('Kamera')">📷</span>
-        </div>
-    </main>
-
-    <div class="home-indicator"></div>
+  <div class="home-line" onclick="goHome()"></div>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
