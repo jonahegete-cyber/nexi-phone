@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXI PHONE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+    <div class="dynamic-island"></div>
+
+    <div class="statusbar">
+        <span>18:26</span>
+        <span>●●●  WiFi 🔋</span>
+    </div>
+
+    <main id="screen">
+        <div class="clock" id="clock">18:26</div>
+        <div class="date" id="date">Freitag, 6. November</div>
+
+        <div class="apps">
+            <div class="app" onclick="openApp('Telefon')">
+                <span>📞</span>Telefon
+            </div>
+            <div class="app" onclick="openApp('Nachrichten')">
+                <span>💬</span>Nachrichten
+            </div>
+            <div class="app" onclick="openApp('Fotos')">
+                <span>🌄</span>Fotos
+            </div>
+            <div class="app" onclick="openApp('Kamera')">
+                <span>📷</span>Kamera
+            </div>
+            <div class="app" onclick="openApp('Einstellungen')">
+                <span>⚙️</span>Einstellungen
+            </div>
+            <div class="app" onclick="openApp('Musik')">
+                <span>🎵</span>Musik
+            </div>
+        </div>
+
+        <div class="dock">
+            <span onclick="openApp('Telefon')">📞</span>
+            <span onclick="openApp('Nachrichten')">💬</span>
+            <span onclick="openApp('Safari')">🌐</span>
+            <span onclick="openApp('Kamera')">📷</span>
+        </div>
+    </main>
+
+    <div class="home-indicator"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
